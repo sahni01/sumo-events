@@ -320,6 +320,22 @@ header
   z-index:100;
 }
 
+
+.float-left{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
 .my-float{
 	margin-top:16px;
 }
@@ -1500,7 +1516,7 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1823,9 +1839,9 @@ responsive
     margin-top: 15px;
   }
 
-  .services {
+  /* .services {
     margin-top: 60px;
-  }
+  } */
 
   section.upcoming-meetings {
     padding-top: 400px;
@@ -1853,9 +1869,9 @@ responsive
     margin-bottom: 30px;
   }
 
-  section.our-courses{
-    padding-top:  300px;
-  }
+  /* section.our-courses{
+    padding-top:  100px;
+  } */
 
   .section-heading h2{
     text-align: center;

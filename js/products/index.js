@@ -36,8 +36,9 @@ function getBirthdayDecorations() {
     birthdaySelector.innerHTML = "";
     birthdayDecorations.map((item, index) => {
         birthdaySelector.innerHTML += `
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="item rounded-30 overflow-hidden">
-              <img src="${item.image}" alt="Course One">
+              <img src="${item.image}" alt="Course One" style="height:250px; object-fit: cover;">
               <div class="down-content">
                 <h4 class="p-2 pb-0 border-0">${item.title}</h4>
                 <div class="info p-2">
@@ -45,12 +46,13 @@ function getBirthdayDecorations() {
                     <div class="col-12 d-flex justify-content-center align-items-center">
 
                        <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
-                  <div class="scroll-to-section"><p>Book Now</p></div>
+                  <div ><p>Book Now</p></div>
               </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
                 `
     })
@@ -62,22 +64,24 @@ function getAnniversaryDecorations() {
     anniversarySelector.innerHTML = "";
     anniversaryDecorations.map((item, index) => {
         anniversarySelector.innerHTML += `
-        <div class="col-lg-4 col-xl-3 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="team-item">
-            <div class="position-relative overflow-hidden">
-                <img class="img-fluid product-image"  src="${item.image}" alt="">
-                <div class="team-overlay position-absolute start-0 top-0 w-100 h-100" style="width:278px; height: 278px;">
-                    <a class="btn mx-1" onclick="handleBookNowButtonClick('${item.image}')">Book Now</a>
-                    
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="item rounded-30 overflow-hidden">
+              <img src="${item.image}" alt="Course One" style="height:250px; object-fit: cover;">
+              <div class="down-content">
+                <h4 class="p-2 pb-0 border-0">${item.title}</h4>
+                <div class="info p-2">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+
+                       <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
+                  <div ><p>Book Now</p></div>
+              </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="bg-light text-center p-4 product-details">
-                <h5 class="fw-bold mb-0 product-title">${item.title}</h5>
-                
-                <button class="btn btn-primary mx-1 mt-3 product-btn" onclick="handleBookNowButtonClick('${item.image}')" >Book Now</button>
-                </div>
-                </div>
-                </div>
+            </div>
         `
     })
 }
@@ -86,22 +90,24 @@ function getBabyShowerDecorations() {
     babyShowerSelector.innerHTML = "";
     babyDecorations.map((item, index) => {
         babyShowerSelector.innerHTML += `
-        <div class="col-lg-4 col-xl-3 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="team-item">
-            <div class="position-relative overflow-hidden">
-                <img class="img-fluid product-image"  src="${item.image}" alt="">
-                <div class="team-overlay position-absolute start-0 top-0 w-100 h-100" style="width:278px; height: 278px;">
-                    <a class="btn mx-1" onclick="handleBookNowButtonClick('${item.image}')">Book Now</a>
-                    
+       <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="item rounded-30 overflow-hidden">
+              <img src="${item.image}" alt="Course One" style="height:250px; object-fit: cover;">
+              <div class="down-content">
+                <h4 class="p-2 pb-0 border-0">${item.title}</h4>
+                <div class="info p-2">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+
+                       <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
+                  <div ><p>Book Now</p></div>
+              </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="bg-light text-center p-4 product-details">
-                <h5 class="fw-bold mb-0 product-title">${item.title}</h5>
-                
-                <button class="btn btn-primary mx-1 mt-3 product-btn" onclick="handleBookNowButtonClick('${item.image}')" >Book Now</button>
-                </div>
-                </div>
-                </div>
+            </div>
         `
     })
 }
@@ -156,20 +162,18 @@ function getBabyShowerDecorations() {
 // }
 
 
-// function getGallery() {
-//     gallerySelector.innerHTML = "";
-//     [...birthdayDecorations, ...anniversaryDecorations, ...babyDecorations, ...haldiMehndiDecoration, ...firstNightDecoration].map((item, index) => {
-//         gallerySelector.innerHTML += `
-//         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-//         <div class="team-item">
-//             <div class="position-relative overflow-hidden">
-//                 <img class="img-fluid" style="width:100%; height:278px;" src="${item.image}" alt="">
-//             </div>
-//         </div>
-//     </div>
-//         `
-//     })
-// }
+function getGallery() {
+    gallerySelector.innerHTML = "";
+    [...birthdayDecorations, ...anniversaryDecorations, ...babyDecorations, ...haldiMehndiDecoration, ...firstNightDecoration].map((item, index) => {
+        gallerySelector.innerHTML += `
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="item rounded-30 overflow-hidden">
+              <img src="${item.image}" alt="Course One" style="height:250px; object-fit: cover;">
+            </div>
+            </div>
+        `
+    })
+}
 
 
 function getBirthdayDecorationsHome() {
@@ -185,7 +189,7 @@ function getBirthdayDecorationsHome() {
               <div class="col-12 d-flex justify-content-center align-items-center">
 
                  <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
-            <div class="scroll-to-section"><p>Book Now</p></div>
+            <div ><p>Book Now</p></div>
         </div>
               </div>
             </div>
@@ -211,7 +215,7 @@ function getAnniversaryDecorationsHome() {
                     <div class="col-12 d-flex justify-content-center align-items-center">
 
                        <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
-                  <div class="scroll-to-section"><p>Book Now</p></div>
+                  <div ><p>Book Now</p></div>
               </div>
                     </div>
                   </div>
@@ -235,7 +239,7 @@ function getBabyShowerDecorationsHome() {
               <div class="col-12 d-flex justify-content-center align-items-center">
 
                  <div class="main-button-red" onclick="handleBookNowButtonClick('${item.image}')">
-            <div class="scroll-to-section"><p>Book Now</p></div>
+            <div ><p>Book Now</p></div>
         </div>
               </div>
             </div>
@@ -369,7 +373,7 @@ function handleBookNowButtonClick(productImage) {
     var message = 'Hello, I want to book this decoration.';
     var imageUrl = productImage;
 
-    sendWhatsAppMessage(phoneNumber, message, `https://sumoevents.com${imageUrl}`);
+    sendWhatsAppMessage(phoneNumber, message, `https://sumoevent.com${imageUrl}`);
     // convertImageToBase64(imageUrl, function(imageBase64) {
     // });
 }

@@ -301,7 +301,7 @@
     },
     {
         title: "Anniversary Decoration",
-        image: "/img/6.jpeg",
+        image: "/img/anniversary/6.jpeg",
         price: "3999",
         desc: [
             " Cabana setup on floor with stand",
